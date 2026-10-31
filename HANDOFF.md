@@ -32,3 +32,9 @@
 2. Search Console 验证文件(用户 Google 账号操作)
 3. favicon/hero 素材换 AAC 主题
 4. per-class 独立页(Warrior/Ranger/Mage/Berserker 各一篇)上线周内补
+
+## 5. 视觉与视频更新(2026-10-31 晚)
+
+- **电影感 Hero**:官方截图(Steam CDN 1920x1080 日落古城,无内嵌文字)做全幅背景 + 暗角渐变 + 26s Ken Burns,`public/images/hero-aac.jpg`
+- **og 分享图**:换官方原画(key art 带游戏 logo),`public/images/og-aac.jpg`,1920x1080
+- **预告片区**:官方预告缩略图卡片(Steam CDN)链接官方 YouTube 频道 @ArcheAgeChronicles;拿到官方预告 videoId 后替换为 LazyYouTube 内嵌播放器(`home.hero.videoId` 一行配置)
