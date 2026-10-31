@@ -84,20 +84,23 @@ function trendingLabel(link: QuickLink): string {
   jsonLd={jsonLd}
 >
   {/* ─────────────────────────────── Hero ─────────────────────────────── */}
-  <section class="relative flex min-h-[52vh] items-center overflow-hidden border-b border-border md:min-h-[68vh]">
-    {/* Subtle theme-color gradient backdrop — gives the hero a visual anchor
-        without requiring an image asset. Sits behind the watermark. */}
-    <div
-      aria-hidden="true"
-      class="pointer-events-none absolute inset-0 bg-gradient-to-br from-nav/8 via-transparent to-transparent"
-    />
-    {/* Faint game-name watermark — pure CSS, no image asset required. */}
-    <span
-      aria-hidden="true"
-      class="pointer-events-none absolute inset-x-0 top-1/2 -translate-y-1/2 select-none text-center text-[18vw] font-black leading-none text-foreground/[0.03] md:text-[14vw]"
-    >
-      {site.game.name}
-    </span>
+  <section class="relative flex min-h-[58vh] items-center overflow-hidden border-b border-border md:min-h-[76vh]">
+    {/* Cinematic backdrop — official screenshot, slow Ken Burns drift.
+        Scrims protect the text: side gradient + top/bottom fades. */}
+    <div aria-hidden="true" class="absolute inset-0 overflow-hidden">
+      <img
+        src={`${import.meta.env.BASE_URL}images/hero-aac.jpg`}
+        alt=""
+        class="hero-kenburns absolute inset-0 h-full w-full object-cover object-center"
+        loading="eager"
+        fetchpriority="high"
+      />
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-background/95 via-background/60 to-background/15"
+      />
+      <div class="absolute inset-x-0 bottom-0 h-44 bg-gradient-to-t from-background via-background/60 to-transparent" />
+      <div class="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-background/70 to-transparent" />
+    </div>
 
     <div class="relative mx-auto w-full max-w-7xl px-4 py-16 md:py-24">
       <p class="text-sm font-semibold uppercase tracking-wider text-foreground">{hero.badge}</p>
@@ -136,6 +139,35 @@ function trendingLabel(link: QuickLink): string {
   {hero.videoId && (
     <VideoSection videoId={hero.videoId} title={`${site.game.name} ${shared.gameTrailer}`} />
   )}
+
+  {/* Trailer — official launch trailer. Links to the official channel until
+      the YouTube videoId is confirmed, then swaps to the embedded player. */}
+  <section class="border-b border-border">
+    <div class="mx-auto max-w-4xl px-4 py-8">
+      <a
+        href="https://www.youtube.com/@ArcheAgeChronicles"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group relative block overflow-hidden rounded-lg border border-border"
+        aria-label="Watch the official ArcheAge Chronicles trailer on YouTube"
+      >
+        <img
+          src={`${import.meta.env.BASE_URL}images/trailer-thumb.jpg`}
+          alt="ArcheAge Chronicles Official Trailer"
+          class="aspect-video w-full object-cover transition duration-300 group-hover:scale-[1.02]"
+          loading="lazy"
+        />
+        <div class="absolute inset-0 flex items-center justify-center bg-black/30 transition group-hover:bg-black/20">
+          <span class="flex h-16 w-16 items-center justify-center rounded-full bg-primary/90 text-primary-foreground shadow-lg">
+            <Icon name="lucide:play" class="h-7 w-7" />
+          </span>
+        </div>
+        <span class="absolute bottom-3 left-3 rounded bg-background/90 px-3 py-1 text-xs font-semibold">
+          Official Trailer — watch on the ArcheAge Chronicles channel
+        </span>
+      </a>
+    </div>
+  </section>
 
   {/* ───────────────────────────── Quick Start ────────────────────────── */}
   <QuickStart
@@ -260,3 +292,25 @@ function trendingLabel(link: QuickLink): string {
     )
   }
 </LocaleLayout>
+
+<style>
+  /* Cinematic hero: slow Ken Burns drift on the official screenshot.
+     Scoped to this component; disabled for reduced-motion users. */
+  .hero-kenburns {
+    animation: hero-drift 26s ease-in-out infinite alternate;
+    will-change: transform;
+  }
+  @keyframes hero-drift {
+    from {
+      transform: scale(1) translateX(0);
+    }
+    to {
+      transform: scale(1.08) translateX(-1.5%);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .hero-kenburns {
+      animation: none;
+    }
+  }
+</style>
