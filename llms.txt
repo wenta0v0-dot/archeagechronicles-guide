@@ -1,0 +1,10 @@
+# ArcheAge Chronicles Wiki
+
+> An unofficial player-made guide for ArcheAge Chronicles: the four launch classes, weapon mastery, respec mechanics and the launch-day route — verified against official class introductions and dated.
+
+Wiki for ArcheAge Chronicles (PC (Steam), by XLGames). Articles cover boss guides, tier lists, codes, items, and beginner tips.
+
+## Articles
+
+- [ArcheAge Chronicles Launch-Day Guide — Your First Hours](https://wenta0v0-dot.github.io/archeagechronicles-guide/guides/beginner-guide/): ArcheAge Chronicles launches November 3, 2026. This launch-day guide covers the first-hours route: trying weapons before level 25, the respec economy, and the decisions that are expensive to undo — verified against official class introductions and dated.
+- [ArcheAge Chronicles Classes & Weapon Mastery Guide (Launch)](https://wenta0v0-dot.github.io/archeagechronicles-guide/guides/class-guide/): ArcheAge Chronicles launches November 3 with four classes defined by your weapon: Warrior, Ranger, Mage and Berserker. Weapon mastery means your armament changes everything, respeccing costs currency, and the community advice is to lock your build by level 25. This guide maps all four classes and the mechanics.

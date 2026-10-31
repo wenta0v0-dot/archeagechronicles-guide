@@ -1,0 +1,21 @@
+{
+  "name": "ArcheAge Chronicles Wiki",
+  "short_name": "AAC Guide",
+  "description": "An unofficial player-made guide for ArcheAge Chronicles: the four launch classes, weapon mastery, respec mechanics and the launch-day route — verified against official class introductions and dated.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1f507a",
+  "icons": [
+    {
+      "src": "android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
