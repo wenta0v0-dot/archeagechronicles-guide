@@ -152,9 +152,10 @@
     "hero": {
       "badge": "ArcheAge Chronicles",
       "title": "ArcheAge Chronicles Wiki",
-      "description": "Class builds, weapon mastery and the launch-day route for the November 3 launch — the guide the official wiki hasn’t written yet, verified and dated.",
+      "description": "Class builds, weapon mastery and the launch-day route for the November 3 Early Access launch — the guide the official wiki hasn’t written yet, verified and dated.",
       "ctaPrimary": "Class guide",
-      "ctaSecondary": "Launch route"
+      "ctaSecondary": "Launch route",
+      "videoId": ""
     },
     "start": {
       "badge": "Quick start",
