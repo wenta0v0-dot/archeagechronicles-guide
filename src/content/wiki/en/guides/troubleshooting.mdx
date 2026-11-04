@@ -1,0 +1,139 @@
+---
+title: 'ArcheAge Chronicles Launch Bugs & Fixes — Known Issues (Nov 4)'
+description: 'Every confirmed ArcheAge Chronicles launch bug and the official workaround: tutorial stuck, boss not spawning, Malchuk, terrain, party disband. Dated.'
+category: 'guides'
+date: 2026-11-04
+lastModified: 2026-11-04
+tags: ['troubleshooting', 'bugs', 'launch', 'fixes']
+summary: 'XLGames published its official launch-issue list on November 4, 2026. This page turns it into a searchable fix sheet: which bugs already have patches waiting to deploy, which are still under investigation, and the exact workaround for each — including the terrain-escape procedure and the party-disband rule for dungeons.'
+faq:
+  - question: 'How do I get unstuck if my character is stuck in the terrain?'
+    answer: 'Press ESC and select Escape. If that does not work, restart the game, log in again, and use Escape once more. This is XLGames official workaround from its November 4, 2026 launch-issue notice. If it still fails, report it in the official Discord bug channel with the location.'
+  - question: 'My ArcheAge Chronicles tutorial will not let me progress — is it fixed?'
+    answer: 'The fix is complete and awaiting deployment, according to XLGames November 4 notice. There is no player-side workaround, so you must wait for the patch or open a new character. Watch the Steam news hub for the deployment announcement.'
+  - question: 'Why did the boss stop spawning in ArcheAge Chronicles?'
+    answer: 'Leaving a boss area and returning could stop the boss from spawning — a confirmed launch bug whose fix is ready and waiting to deploy. Until then, do not leave the arena mid-fight: if you do, the encounter may not reset.'
+  - question: 'Is ArcheAge Chronicles down for maintenance?'
+    answer: 'Yes — temporary maintenance is scheduled for November 4 at 9:00 AM PT (17:00 UTC, 1:00 AM on November 5 in Beijing), expected to last about two hours. The game is unavailable during that window, and the schedule may shift.'
+  - question: 'Does ArcheAge Chronicles support Linux or Steam Deck?'
+    answer: 'No. XLGames states Linux and Steam Deck are not officially supported at this time, and says it will keep evaluating support for the future.'
+---
+
+import Callout from '~/components/mdx/Callout.astro';
+import Accordion from '~/components/mdx/Accordion.astro';
+
+ArcheAge Chronicles launched on November 3, 2026, and XLGames posted its **[Key Issues on Early Access Launch Day and Our Response Plan](https://steamcommunity.com/app/3218230/allnews/)** on November 4 at 10:57 UTC. This page turns that notice, plus the maintenance schedule, into a fix sheet you can scan in a hurry. **Everything here is official-source material, dated November 4, 2026** — no community guesswork.
+
+<Callout type="warn" title="Read the status column before you reinstall">
+  Several of these bugs **already have a fix written and are only waiting on deployment**. Reinstalling will not help those. Check whether your issue is marked *fix awaiting deploy* before you spend an hour on a redownload.
+</Callout>
+
+## Quick fix sheet
+
+| Symptom | Status | What to do |
+|---|---|---|
+| Tutorial quest will not advance | Fix ready, awaiting deploy | No workaround — wait for the patch |
+| Boss stopped spawning | Fix ready, awaiting deploy | Do not leave a boss arena mid-fight |
+| Malchuk will not reappear / cannot respawn | Under investigation | Report details in the official Discord |
+| Quest dead-ends after talking to an NPC (incl. Cliffs of Madness) | Under investigation | Report the exact NPC and area |
+| Stuck after party leader leaves / party disbands in a dungeon | Under investigation | Stay grouped until you reach the next area |
+| Party member cannot pick up a key | Known, not shared | Each member must loot their own key |
+| Character stuck in terrain | Workaround available | ESC → Escape, then restart if needed |
+| Game hangs on anti-cheat init | Ticket-only | Screenshot it and submit a support ticket |
+| Stuttering / frame drops | Ongoing optimization | No fix yet — being worked through Early Access |
+| Linux / Steam Deck | Not supported | No official support planned yet |
+
+## Blocking progression
+
+<Accordion title="Tutorial quest will not advance">
+  **Status: fix complete, deployment date to be announced.**
+
+  Some players cannot progress through certain tutorial quests. XLGames says the fix is finished and is being pushed as soon as possible, along with additional unlisted fixes. There is no player-side workaround — this is a server/logic fix, not a settings problem.
+</Accordion>
+
+<Accordion title="Boss stopped spawning after you left the area">
+  **Status: fix complete, deployment date to be announced.**
+
+  In certain boss encounters, leaving the area and coming back can cause the boss to stop spawning permanently in that instance. Until the patch lands: **finish the encounter in one pull, and do not leave the arena mid-fight.** If you already triggered it, you may need to reset or re-enter the instance.
+</Accordion>
+
+<Accordion title="Malchuk encounter — boss will not appear, or you cannot respawn">
+  **Status: under investigation.**
+
+  After dying during the Malchuk encounter, the boss may fail to appear again, and players may be unable to respawn. XLGames is still isolating the root cause and trigger conditions. If it happens to you, post the details in the official Discord bug-report channel — reproduction reports are what they are asking for.
+</Accordion>
+
+<Accordion title="Quest progression breaks after an NPC conversation">
+  **Status: under investigation.**
+
+  Talking to NPCs in certain areas — the Cliffs of Madness is named explicitly — can leave a quest unable to progress. The cause and conditions are still unknown. Same ask: report the NPC, the area, and the quest name.
+</Accordion>
+
+<Accordion title="Dungeon blocks after the party leader leaves or the party disbands">
+  **Status: under investigation — a fix may take time.**
+
+  XLGames calls this structural, which means it is not a quick patch. **The rule until then: do not disband and do not let the leader leave until every member has moved on to the next area after clearing the dungeon.**
+</Accordion>
+
+<Accordion title="Party members cannot pick up dungeon keys">
+  **Status: known behaviour, not a bug fix.**
+
+  Key items are **not shared** across the party. Each member has to collect their own key. If one player is short a key, that is why.
+</Accordion>
+
+## Getting unstuck
+
+<Accordion title="Character stuck in the terrain" open={true}>
+  **Status: workaround available now.**
+
+  1. Press **ESC**, then select **Escape**.
+  2. If that does not work, **restart the game**, log back in, and use **Escape** once more.
+
+  That is the official sequence. If it still fails, report the location in the official Discord bug channel.
+</Accordion>
+
+<Accordion title="Game hangs during anti-cheat initialization">
+  **Status: handle by ticket.**
+
+  The game can stall while the anti-cheat initializes. Take a **screenshot of the screen where it hangs** and submit a ticket through Customer Support — reachable from the in-game menu with **ESC**. XLGames reviews these case by case, so the screenshot matters.
+</Accordion>
+
+<Accordion title="Unexpected crashes">
+  **Status: partially addressed in the next patch.**
+
+  XLGames says some crash reports are handled in the next patch and that it will keep investigating new ones. If a crash is reproducible, the Discord bug channel is the fastest route.
+</Accordion>
+
+## Settings worth changing now
+
+<Accordion title="Chat is full of languages you do not read">
+  Go to **Settings → Game Options → Chat Language Filter** to hide unwanted languages. XLGames also plans to add an option to hide the chat window entirely.
+</Accordion>
+
+<Accordion title="You cannot find your party in the same channel">
+  There is a **channel transfer button in the party UI** that moves you to the party leader's channel — but it only appears under certain conditions, which is the actual complaint. XLGames plans to widen the conditions and improve the guidance. Until then, check the party frame before assuming you are on the wrong channel.
+</Accordion>
+
+<Accordion title="You want to rebind movement keys">
+  Not possible yet. XLGames has acknowledged the request and plans to make movement keys freely reassignable. No date given.
+</Accordion>
+
+## Maintenance and platform limits
+
+- **Temporary maintenance: November 4, 9:00 AM PT** — that is **17:00 UTC / 1:00 AM on November 5 in Beijing / 2:00 AM in Seoul**. Expected to run about **two hours**, and the game is unavailable throughout. XLGames says the schedule may shift and will announce changes through the same notice.
+- **Linux and Steam Deck are not officially supported.** No timeline for support.
+- **Optimization is ongoing.** Stuttering and frame-rate drops are widespread and environment-dependent, so there is no single fix yet.
+
+<Callout type="tip" title="Where to report a bug">
+  XLGames is collecting reports from three places: the **official Discord bug-report channel**, **Steam Discussions**, and **Customer Support** (ESC menu → Customer Support, or the ticket portal). Include the quest or NPC name, your server, and what you did immediately before the break — those are the details they say they need.
+</Callout>
+
+## What this page will become
+
+Every entry gets re-dated as patches deploy. When the tutorial and boss-spawn fixes land, they move out of "waiting" and the workaround columns get rewritten. If you hit something that is not on this list, it is either unreported or new since November 4 — this page only carries what XLGames has confirmed.
+
+## What to read next
+
+- **[Launch-day guide](/guides/beginner-guide/)** — install checklist, server locks, and your first hours.
+- **[Classes & weapon mastery guide](/guides/class-guide/)** — eight launch weapons, gender locks, and the December update.
+- **[Launch articles](/tags/launch/)** — everything filed under the launch.

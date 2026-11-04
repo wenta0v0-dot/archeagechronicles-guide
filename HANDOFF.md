@@ -98,3 +98,17 @@
 1. **预发官方介绍 ≠ 首发实机**。厂商 class intro 会把「后续更新的武器」提前放进宣传物料,导致首发名单虚高。凡「首发」表述,一律以**上线后实机 + 商店页**为准。
 2. **search 摘要不可直接当事实**。本次 Warhammer 与 Gladius 的差异,是靠「多来源交叉 + 反证检索(专门搜 great axe)」才确认的。
 3. 两篇 MDX 现均标注 `lastModified: 2026-11-04`,正文写明「verified in-game, November 4, 2026」。
+
+## 8. v1.3 新增排障页(2026-11-04 晚)
+
+**动机**:上线 24 小时内玩家搜索意图从「classes/weapons」转向「卡关急救」。官方把答案埋在 Steam 公告里,无结构化、无 SEO、无中文 —— 竞争几乎为零。
+
+- **新页**:`/guides/troubleshooting`(源 `src/content/wiki/en/guides/troubleshooting.mdx`)
+- **素材来源**:官方公告 *[Notice] Key Issues on Early Access Launch Day and Our Response Plan*(2026-11-04 10:57 UTC)+ *Temporary Maintenance Notice*(2026-11-04 14:10 UTC)
+- **结构**:顶部「Quick fix sheet」速查表(症状 → 状态 → 做法),下接 Accordion 分组详情(阻断进度 / 脱困 / 设置建议 / 维护与平台),每条形目带**状态标签**(已修复待部署 / 调查中 / 有临时方案 / 仅能提工单)
+- **互链**:两篇旧指南的「What to read next」均已加入该页;新页回链两篇 + `/tags/launch/`
+- **官方已确认清单**(勿重复造谣):tutorial 卡住、Boss 离开区域后不刷新、Malchuk 死亡后不出现/无法复活、NPC 对话后断链(含 Cliffs of Madness)、队伍解散/队长离开卡副本、**钥匙不共享需各自拾取**、卡地形(ESC→Escape,不行重启)、反作弊初始化卡死(提工单)、Linux/Steam Deck **不支持**、优化中
+- **维护窗口**:11-4 09:00 PT = 17:00 UTC = 北京 **11-5 01:00**,约 2 小时
+- **数据快照(11-4 23:24 北京)**:在线 19,078;评价 1,371 条 Mixed 52%(与 12:45 的 503 条 52% 持平);峰值据报道 ~26,000
+
+**下一轮复更触发条件**:① tutorial/Boss 修复正式部署 → 重写状态列与临时方案;② 12 月更新(female Warrior + Gladius)→ 更新 class-guide;③ 评价跌破/回升至明显档位(如 Mostly Negative / Mostly Positive)→ 首页文案跟进。
