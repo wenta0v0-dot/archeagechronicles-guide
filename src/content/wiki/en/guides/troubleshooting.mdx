@@ -1,20 +1,20 @@
 ---
-title: 'ArcheAge Chronicles Launch Bugs & Fixes — Known Issues (Nov 4)'
-description: 'Every confirmed ArcheAge Chronicles launch bug and the official workaround: tutorial stuck, boss not spawning, Malchuk, terrain, party disband. Dated.'
+title: 'ArcheAge Chronicles Known Issues — Launch Bugs, Fixes & Patch Status'
+description: 'ArcheAge Chronicles launch bugs with live status: tutorial fix deployed November 4, boss despawn partially fixed, Malchuk still under investigation. Dated.'
 category: 'guides'
 date: 2026-11-04
-lastModified: 2026-11-04
+lastModified: 2026-11-06
 tags: ['troubleshooting', 'bugs', 'launch', 'fixes']
-summary: 'XLGames published its official launch-issue list on November 4, 2026. This page turns it into a searchable fix sheet: which bugs already have patches waiting to deploy, which are still under investigation, and the exact workaround for each — including the terrain-escape procedure and the party-disband rule for dungeons.'
+summary: 'The first fix wave is live: the November 4 maintenance deployed the tutorial-progression fix, a Meliot spawn fix, and quest-abandon changes. The generic boss-despawn fix is not yet confirmed shipped, and the Malchuk and party-disband issues remain under investigation. Full status sheet below, dated November 6, 2026.'
 faq:
   - question: 'How do I get unstuck if my character is stuck in the terrain?'
     answer: 'Press ESC and select Escape. If that does not work, restart the game, log in again, and use Escape once more. This is XLGames official workaround from its November 4, 2026 launch-issue notice. If it still fails, report it in the official Discord bug channel with the location.'
-  - question: 'My ArcheAge Chronicles tutorial will not let me progress — is it fixed?'
-    answer: 'The fix is complete and awaiting deployment, according to XLGames November 4 notice. There is no player-side workaround, so you must wait for the patch or open a new character. Watch the Steam news hub for the deployment announcement.'
+  - question: 'Is the ArcheAge Chronicles tutorial bug fixed?'
+    answer: 'Yes — the tutorial-progression fix shipped in the November 4, 2026 maintenance (completed 19:53 UTC). If you are still blocked, first force the client update: open your Steam Library, and if no update button appears, fully close and restart Steam. Still stuck after updating? Report it in the official Discord bug channel.'
   - question: 'Why did the boss stop spawning in ArcheAge Chronicles?'
-    answer: 'Leaving a boss area and returning could stop the boss from spawning — a confirmed launch bug whose fix is ready and waiting to deploy. Until then, do not leave the arena mid-fight: if you do, the encounter may not reset.'
-  - question: 'Is ArcheAge Chronicles down for maintenance?'
-    answer: 'Yes — temporary maintenance is scheduled for November 4 at 9:00 AM PT (17:00 UTC, 1:00 AM on November 5 in Beijing), expected to last about two hours. The game is unavailable during that window, and the schedule may shift.'
+    answer: 'Leaving a boss area and returning could stop the boss from respawning. A specific case — Meliot not appearing — was fixed in the November 4 maintenance, but the generic leave-and-return despawn fix announced on November 4 is not yet confirmed in the patch notes. Until it is, finish boss encounters in one pull and do not leave the arena mid-fight.'
+  - question: 'What was fixed in the November 4 maintenance?'
+    answer: 'The tutorial-progression fix, a fix for Meliot not appearing, an Altar of Seals retry fix, a whisper display fix, improved hitbox detection in the Krogal fight, four Diamond Shores quests made abandonable, Hereafter Stone made unsellable, and assorted item/dismantle adjustments. Update via your Steam Library; restart Steam if the update button does not appear.'
   - question: 'Does ArcheAge Chronicles support Linux or Steam Deck?'
     answer: 'No. XLGames states Linux and Steam Deck are not officially supported at this time, and says it will keep evaluating support for the future.'
 ---
@@ -22,18 +22,31 @@ faq:
 import Callout from '~/components/mdx/Callout.astro';
 import Accordion from '~/components/mdx/Accordion.astro';
 
-ArcheAge Chronicles launched on November 3, 2026, and XLGames posted its **[Key Issues on Early Access Launch Day and Our Response Plan](https://steamcommunity.com/app/3218230/allnews/)** on November 4 at 10:57 UTC. This page turns that notice, plus the maintenance schedule, into a fix sheet you can scan in a hurry. **Everything here is official-source material, dated November 4, 2026** — no community guesswork.
+ArcheAge Chronicles launched on November 3, 2026, and XLGames posted its **[Key Issues on Early Access Launch Day and Our Response Plan](https://steamcommunity.com/app/3218230/allnews/)** on November 4 at 10:57 UTC, then ran a **temporary maintenance the same day** (completed 19:53 UTC) that shipped the first fix wave. This page turns those notices into a fix sheet you can scan in a hurry. **Everything here is official-source material, last verified November 6, 2026** — no community guesswork.
 
-<Callout type="warn" title="Read the status column before you reinstall">
-  Several of these bugs **already have a fix written and are only waiting on deployment**. Reinstalling will not help those. Check whether your issue is marked *fix awaiting deploy* before you spend an hour on a redownload.
+<Callout type="warn" title="Update your client before retesting anything">
+  The November 4 fixes only apply after the client updates. Open your **Steam Library** and let the update run; if no update button appears, **fully close and restart Steam** first. Several "still broken" reports after the maintenance were players on the pre-patch client.
 </Callout>
+
+## What shipped in the November 4 maintenance
+
+Completed **November 4, 19:53 UTC** — apply via Steam Library (restart Steam if the update button does not appear):
+
+- **Tutorial progression fix** — the launch-blocking quest bug is fixed.
+- **Meliot spawn fix** — Meliot no longer fails to appear under the reported conditions.
+- **Altar of Seals retry fix.**
+- **Whisper display fix** — whispers sent by players now show.
+- **Krogal fight hitbox improvements** across his attack patterns.
+- **Four Diamond Shores quests are now abandonable**: Weeping Dead's Doll, Gnoll's Doll, Seaglass Beach Lantern's Calling, Watcher's Village Lantern's Calling.
+- **Hereafter Stone can no longer be sold** (it can still be discarded), plus dismantle-setting adjustments and a fix for discarding Cheap Moonshine.
+- Mutual attacks disabled at the Pioneers' Assembly Hall in the Conflict Channel.
 
 ## Quick fix sheet
 
 | Symptom | Status | What to do |
 |---|---|---|
-| Tutorial quest will not advance | Fix ready, awaiting deploy | No workaround — wait for the patch |
-| Boss stopped spawning | Fix ready, awaiting deploy | Do not leave a boss arena mid-fight |
+| Tutorial quest will not advance | **Fixed — deployed Nov 4** | Update the client; report if it recurs |
+| Boss stopped spawning | **Partially fixed** (Meliot confirmed) | Do not leave a boss arena mid-fight |
 | Malchuk will not reappear / cannot respawn | Under investigation | Report details in the official Discord |
 | Quest dead-ends after talking to an NPC (incl. Cliffs of Madness) | Under investigation | Report the exact NPC and area |
 | Stuck after party leader leaves / party disbands in a dungeon | Under investigation | Stay grouped until you reach the next area |
@@ -45,16 +58,20 @@ ArcheAge Chronicles launched on November 3, 2026, and XLGames posted its **[Key 
 
 ## Blocking progression
 
-<Accordion title="Tutorial quest will not advance">
-  **Status: fix complete, deployment date to be announced.**
+<Accordion title="Tutorial quest will not advance" open={true}>
+  **Status: fixed — deployed in the November 4 maintenance.**
 
-  Some players cannot progress through certain tutorial quests. XLGames says the fix is finished and is being pushed as soon as possible, along with additional unlisted fixes. There is no player-side workaround — this is a server/logic fix, not a settings problem.
+  The launch-blocking tutorial bug was patched on November 4 (19:53 UTC). If you are still stuck:
+
+  1. Open your **Steam Library** and run the update.
+  2. No update button? **Fully close and restart Steam**, then check again.
+  3. Still blocked on the updated client? Report it in the official Discord bug channel — that means a new trigger condition, and it is no longer the launch bug.
 </Accordion>
 
 <Accordion title="Boss stopped spawning after you left the area">
-  **Status: fix complete, deployment date to be announced.**
+  **Status: partially fixed.**
 
-  In certain boss encounters, leaving the area and coming back can cause the boss to stop spawning permanently in that instance. Until the patch lands: **finish the encounter in one pull, and do not leave the arena mid-fight.** If you already triggered it, you may need to reset or re-enter the instance.
+  In certain boss encounters, leaving the area and coming back can cause the boss to stop spawning permanently in that instance. The November 4 maintenance fixed a specific reported case — **Meliot failing to appear** — but the patch notes do not explicitly confirm the generic leave-and-return despawn fix that was announced as ready on November 4. Treat it as not fully shipped: **finish the encounter in one pull, and do not leave the arena mid-fight.** If you already triggered it, you may need to reset or re-enter the instance.
 </Accordion>
 
 <Accordion title="Malchuk encounter — boss will not appear, or you cannot respawn">
@@ -120,9 +137,10 @@ ArcheAge Chronicles launched on November 3, 2026, and XLGames posted its **[Key 
 
 ## Maintenance and platform limits
 
-- **Temporary maintenance: November 4, 9:00 AM PT** — that is **17:00 UTC / 1:00 AM on November 5 in Beijing / 2:00 AM in Seoul**. Expected to run about **two hours**, and the game is unavailable throughout. XLGames says the schedule may shift and will announce changes through the same notice.
+- **November 4 maintenance: completed** (started 09:00 AM PT / 17:00 UTC, wrapped at 19:53 UTC). Contents listed above. Future maintenance windows get announced through the Steam news hub, and the schedule can shift.
 - **Linux and Steam Deck are not officially supported.** No timeline for support.
 - **Optimization is ongoing.** Stuttering and frame-rate drops are widespread and environment-dependent, so there is no single fix yet.
+- **Enforcement has started.** On November 5, XLGames announced sanctions against accounts using system exploits, and says monitoring continues with further bans to be announced through the same notice channel. Do not use third-party tools or exploits — the first ban wave already landed.
 
 <Callout type="tip" title="Where to report a bug">
   XLGames is collecting reports from three places: the **official Discord bug-report channel**, **Steam Discussions**, and **Customer Support** (ESC menu → Customer Support, or the ticket portal). Include the quest or NPC name, your server, and what you did immediately before the break — those are the details they say they need.
@@ -130,7 +148,7 @@ ArcheAge Chronicles launched on November 3, 2026, and XLGames posted its **[Key 
 
 ## What this page will become
 
-Every entry gets re-dated as patches deploy. When the tutorial and boss-spawn fixes land, they move out of "waiting" and the workaround columns get rewritten. If you hit something that is not on this list, it is either unreported or new since November 4 — this page only carries what XLGames has confirmed.
+Every entry gets re-dated as patches deploy. The tutorial fix moved out of "waiting" on November 4; the boss-despawn, Malchuk, and party-disband entries stay until their fixes are confirmed in patch notes. If you hit something that is not on this list, it is either unreported or new since November 4 — this page only carries what XLGames has confirmed.
 
 ## What to read next
 

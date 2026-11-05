@@ -112,3 +112,32 @@
 - **数据快照(11-4 23:24 北京)**:在线 19,078;评价 1,371 条 Mixed 52%(与 12:45 的 503 条 52% 持平);峰值据报道 ~26,000
 
 **下一轮复更触发条件**:① tutorial/Boss 修复正式部署 → 重写状态列与临时方案;② 12 月更新(female Warrior + Gladius)→ 更新 class-guide;③ 评价跌破/回升至明显档位(如 Mostly Negative / Mostly Positive)→ 首页文案跟进。
+
+## 9. v1.4 复更:维护补丁落地 + 触发条件 ① 命中(2026-11-06)
+
+**触发条件 ①(tutorial/Boss 修复部署)部分命中** → troubleshooting 页已更新(`lastModified: 2026-11-06`)。
+
+### 11-4 维护实际上线内容(公告 11-4 19:53 UTC,北京 11-5 03:53)
+
+- ✅ **教程进度修复**(launch-issue 清单第 1 项 → 已部署)
+- ✅ **Meliot 不出现修复**(注意:这是具体案例,通用「离开区域 Boss 不刷新」修复未在补丁说明中确认 → 页面状态改为 Partially fixed,建议维持「打完再走」)
+- ✅ Altar of Seals 重试修复;私聊显示修复;Krogal 命中判定改进
+- ✅ Diamond Shores 四任务可放弃(Weeping Dead's Doll / Gnoll's Doll / Seaglass Beach Lantern's Calling / Watcher's Village Lantern's Calling)
+- ✅ Hereafter Stone 禁售(可弃);Cheap Moonshine 可弃;拆解设置调整;冲突频道 Pioneer's Assembly Hall 禁止互攻
+- **客户端更新提示**:Steam 库更新;无更新按钮 → 完全关闭重启 Steam(页面已写入 Callout)
+
+**仍调查中(官方未再更新)**:Malchuk、通用 Boss 重置、NPC 对话断链(含 Cliffs of Madness)、队伍解散卡副本。
+
+### 其他新事实
+
+- **封禁公告**(11-5 10:19 UTC):首波对「系统漏洞异常使用」账号执行制裁,持续监控并将续报 —— 仅观察记录,不作内容(政策猜测踩红线)
+- **评价**:总推荐 2,559(11-5 16:48 UTC);全语言档位仍 **Mixed**;**英文子集 67% 好评**(1,015 条)—— 逼近 Mostly Positive 线(70%),触发条件 ③ 未命中但需盯
+- **在线**:13,471(11-5 16:48 UTC);曲线:20,360(11-4 12:45)→ 19,078(11-4 23:24)→ 13,471(11-5 16:48)≈ 3 天 -34%
+- 维护公告里把客户端重启写进官方指引,与页面既有「下载不启动→重启 Steam」提示互证
+
+### 触发条件更新
+
+1. ~~tutorial 修复部署~~ → **已处理(本次)**
+2. 通用 Boss 重置 / Malchuk / 散队卡副本修复确认 → 再更状态列
+3. 评价档位变化(英文子集 67% 很接近 70% 的 Mostly Positive 线,随时可能翻转)→ 首页/文案跟进
+4. **新增**:12 月更新(female Warrior + Gladius)官方细节公布 → class-guide
