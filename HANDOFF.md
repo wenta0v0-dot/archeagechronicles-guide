@@ -167,3 +167,23 @@
 1. **tier-list 新页**(抄 AOEAH 数值化格式 + Quick Picks,红线内标注来源)—— 上线周最大流量词缺口
 2. per-class ×4 时把「trait 点数 ~95 / 单武器 50-60」这类社区数据以 reported 标签纳入
 3. Wikily 式关联互链密度:per-class 页之间武器↔职业↔构建互链
+
+## 11. ⚠️ CI 自 11-2 起持续红(历史遗留,非本次引入)(2026-11-06)
+
+**发现**: Actions 里 `CI` workflow **每次推送都 failure**(至少从 11c5b906/11-2 起,含 11-3/11-4/11-5/11-6 全部 5 次推送)。**Pages 部署不受影响**(deploy from branch 独立走,全部 success),线上一直正常。
+
+**失败范围**:两个 job 全挂
+- `check` → "Quality gates" composite(八道门折叠成一个 step,远程看不到具体哪道)
+- `ops-toolkit` → tools/anvil-ops 的 typecheck+test+build(本会话从未触碰该目录)
+
+**本地复现**:八道门(含 `--strict-ui`)+ `pnpm install --frozen-lockfile` 在 Windows 本地全绿 → 疑似环境差异:
+1. gates action 的 `site-url` 用 `${{ vars.SITE_URL || 'https://anvil.wiki' }}` —— 若 repo vars 没配 SITE_URL,远程构建用的是模板默认域,后续 check-links/check-sitemap 可能因此挂
+2. ubuntu(Node 走 .nvmrc)与本地 Windows 的差异
+3. ops-toolkit 自带 lockfile 的独立安装
+
+**诊断被阻塞**:共享出口 IP 的 GitHub API 配额耗尽(runners/logs 接口 403/429),gh CLI 未安装。
+
+**下一步选项**:
+- 用户登录浏览器打开 Actions → 最新 CI run → 贴出失败 step 的日志尾部(最快)
+- 或等 IP 配额窗口重置后用 API 拉 logs zip
+- 修复时优先检查 repo Settings → Variables → actions 有无 `SITE_URL`
