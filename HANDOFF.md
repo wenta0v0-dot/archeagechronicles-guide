@@ -141,3 +141,29 @@
 2. 通用 Boss 重置 / Malchuk / 散队卡副本修复确认 → 再更状态列
 3. 评价档位变化(英文子集 67% 很接近 70% 的 Mostly Positive 线,随时可能翻转)→ 首页/文案跟进
 4. **新增**:12 月更新(female Warrior + Gladius)官方细节公布 → class-guide
+
+## 10. 同行分析与 v1.5:借鉴竞品内容(2026-11-06 晚)
+
+### 竞争格局快照
+
+- **Wikily.gg**:全品类数据库(交互地图/掉落率/任务链/物品)+ 手机与游戏内悬浮窗 App —— 重型对手,不正面竞争
+- **MetaForge**:内容站,known-issues 页与新手指南页**已进排名** —— 我们排障页的直接对标
+- **AOEAH / LAGOFAST / SSEGOLD**:RMT 内容营销,tier list 导流
+- **ArcheAgeBuilds.com**:同型垂直站;**Fandom wiki 仅 26 页纯 lore,胚胎期**
+- 本站建站 6 天,尚未进前页(新域正常)
+
+### v1.5 借鉴内容(均标注来源与「非官方」)
+
+- troubleshooting 新增 **「Launch, black screen, and crash fixes」** 7 步清单(首次启动 shader 编译等待 ~10 分钟 / 全退 Steam 杀进程 / 关覆盖层 / 验证文件 / XIGNCODE3 隔离区 / GPU 驱动 / Intel NPU 崩溃解法)—— 来源 MetaForge(11-4)+ LagZapper
+- troubleshooting 新增 **「Dungeon boss missing — leader-swap trick」**:换队长 → 全员退副本 → 重进,**标 community-reported + 链接 Steam 讨论区原帖**,并写明未经验证
+- 键位重绑条目补充:目前可重绑 ~10 个 UI 快捷键 + 分设备反转 Y 轴(MetaForge)
+- 平台条目补充:Proton/改文件有**封号风险**(反作弊),Family Sharing 官方不支持
+- beginner-guide 安装清单补:首次启动黑屏 ~10 分钟属正常;Family Sharing 不支持;内核级反作弊
+- FAQ +2:「won't launch / black screen」「dungeon boss never spawns」
+- **未收录**:「第一副本隔栏杆对话 + 水下钥匙」技巧 —— 搜索摘要提到但无稳定来源,标记为待核实线索
+
+### 待办(源自同行分析)
+
+1. **tier-list 新页**(抄 AOEAH 数值化格式 + Quick Picks,红线内标注来源)—— 上线周最大流量词缺口
+2. per-class ×4 时把「trait 点数 ~95 / 单武器 50-60」这类社区数据以 reported 标签纳入
+3. Wikily 式关联互链密度:per-class 页之间武器↔职业↔构建互链

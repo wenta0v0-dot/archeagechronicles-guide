@@ -15,6 +15,10 @@ faq:
     answer: 'Leaving a boss area and returning could stop the boss from respawning. A specific case — Meliot not appearing — was fixed in the November 4 maintenance, but the generic leave-and-return despawn fix announced on November 4 is not yet confirmed in the patch notes. Until it is, finish boss encounters in one pull and do not leave the arena mid-fight.'
   - question: 'What was fixed in the November 4 maintenance?'
     answer: 'The tutorial-progression fix, a fix for Meliot not appearing, an Altar of Seals retry fix, a whisper display fix, improved hitbox detection in the Krogal fight, four Diamond Shores quests made abandonable, Hereafter Stone made unsellable, and assorted item/dismantle adjustments. Update via your Steam Library; restart Steam if the update button does not appear.'
+  - question: 'ArcheAge Chronicles will not launch or shows a black screen — what do I do?'
+    answer: 'A black screen on first launch is usually shader compilation — wait up to 10 minutes without force-restarting. Then work down the list: fully exit Steam (end leftover processes in Task Manager), disable the Steam and third-party overlays, verify game-file integrity, check your antivirus for quarantined XIGNCODE3 files, and update your GPU drivers. Still stuck? Open a ticket via ESC → Customer Support.'
+  - question: 'How do I fix a dungeon boss that never spawns in ArcheAge Chronicles?'
+    answer: 'Official status: the leave-and-return despawn is partially fixed (the Meliot case shipped November 4). A community-reported trick — transfer party leadership, have everyone leave the dungeon instance, then re-enter — reportedly worked twice for its poster (Steam discussions, November 2026). It is unofficial and unverified by this site; the safe rule remains: finish boss fights in one pull.'
   - question: 'Does ArcheAge Chronicles support Linux or Steam Deck?'
     answer: 'No. XLGames states Linux and Steam Deck are not officially supported at this time, and says it will keep evaluating support for the future.'
 ---
@@ -52,6 +56,8 @@ Completed **November 4, 19:53 UTC** — apply via Steam Library (restart Steam i
 | Stuck after party leader leaves / party disbands in a dungeon | Under investigation | Stay grouped until you reach the next area |
 | Party member cannot pick up a key | Known, not shared | Each member must loot their own key |
 | Character stuck in terrain | Workaround available | ESC → Escape, then restart if needed |
+| Game will not launch / long black screen | Workaround available | Wait out shader compile, then verify files & overlays |
+| Dungeon boss missing (in a party) | Community trick, unofficial | Switch leader → leave instance → re-enter |
 | Game hangs on anti-cheat init | Ticket-only | Screenshot it and submit a support ticket |
 | Stuttering / frame drops | Ongoing optimization | No fix yet — being worked through Early Access |
 | Linux / Steam Deck | Not supported | No official support planned yet |
@@ -92,6 +98,18 @@ Completed **November 4, 19:53 UTC** — apply via Steam Library (restart Steam i
   XLGames calls this structural, which means it is not a quick patch. **The rule until then: do not disband and do not let the leader leave until every member has moved on to the next area after clearing the dungeon.**
 </Accordion>
 
+<Accordion title="Dungeon boss missing with a party — the leader-swap trick (unofficial)">
+  **Status: community-reported, not verified by this site.**
+
+  A [Steam Discussions thread](https://steamcommunity.com/app/3218230/discussions/0/571553910742881242) ("Missing dungeon boss FIX (Maybe)") reports this sequence working twice:
+
+  1. **Transfer party leadership** to another member.
+  2. Have **everyone leave the dungeon instance entirely**.
+  3. **Re-enter** the dungeon.
+
+  This is a player workaround for a bug XLGames has only partially patched (the Meliot case, November 4). Treat it as a lottery ticket, not a fix — and the official rule still applies: do not leave a boss arena mid-fight.
+</Accordion>
+
 <Accordion title="Party members cannot pick up dungeon keys">
   **Status: known behaviour, not a bug fix.**
 
@@ -121,6 +139,22 @@ Completed **November 4, 19:53 UTC** — apply via Steam Library (restart Steam i
   XLGames says some crash reports are handled in the next patch and that it will keep investigating new ones. If a crash is reproducible, the Discord bug channel is the fastest route.
 </Accordion>
 
+## Launch, black screen, and crash fixes
+
+Collected from community guides (MetaForge, November 4; LagZapper) and standard Steam troubleshooting. Work down the list and **relaunch after each step that applies**:
+
+1. **Wait out the first launch.** A black screen for up to **~10 minutes** on first boot is usually shader compilation — do not force-restart while the disk/CPU is still working.
+2. **Restart Steam fully.** Steam → Exit, then end any leftover game or Steam processes in **Task Manager**, and relaunch. (This is also the official tip for a missing update button after maintenance.)
+3. **Disable overlays.** Turn off the in-game Steam Overlay (Settings → In Game) and any third-party overlays (Discord, MSI Afterburner, renderer hooks).
+4. **Verify game files.** Library → right-click the game → Properties → Installed Files → **Verify integrity of game files**.
+5. **Check your antivirus for XIGNCODE3 quarantine.** The game uses the XIGNCODE3 anti-cheat; security software can silently quarantine its files. Restore/exclude rather than delete.
+6. **GPU selection and drivers.** Set the game to High performance in Windows Graphics settings, and update drivers (NVIDIA App / AMD Adrenalin / Intel DSA).
+7. **Intel Core Ultra NPU crash workaround** (player-reported, via MetaForge): disable **Intel AI Boost** under Neural processors in Device Manager, launch the game, then re-enable it.
+
+<Callout type="tip" title="Launch problems that are actually the anti-cheat">
+  Stuck on a **"preparing security module"**-style screen is the anti-cheat initializer, not a broken install — no reinstall will fix it. Screenshot the exact screen and open a support ticket (ESC → Customer Support).
+</Callout>
+
 ## Settings worth changing now
 
 <Accordion title="Chat is full of languages you do not read">
@@ -132,13 +166,14 @@ Completed **November 4, 19:53 UTC** — apply via Steam Library (restart Steam i
 </Accordion>
 
 <Accordion title="You want to rebind movement keys">
-  Not possible yet. XLGames has acknowledged the request and plans to make movement keys freely reassignable. No date given.
+  Free movement-key rebinding is **not possible yet** — XLGames has acknowledged the request and plans to make movement keys freely reassignable, no date given. Meanwhile you **can** rebind around 10 UI shortcuts and invert the camera Y-axis separately for mouse and controller.
 </Accordion>
 
 ## Maintenance and platform limits
 
 - **November 4 maintenance: completed** (started 09:00 AM PT / 17:00 UTC, wrapped at 19:53 UTC). Contents listed above. Future maintenance windows get announced through the Steam news hub, and the schedule can shift.
-- **Linux and Steam Deck are not officially supported.** No timeline for support.
+- **Linux and Steam Deck are not officially supported.** No timeline for support — and community Proton/file-modification workarounds carry **account risk** under the anti-cheat; XLGames discourages them.
+- **Steam Family Sharing is intentionally unsupported** — one purchase, one library.
 - **Optimization is ongoing.** Stuttering and frame-rate drops are widespread and environment-dependent, so there is no single fix yet.
 - **Enforcement has started.** On November 5, XLGames announced sanctions against accounts using system exploits, and says monitoring continues with further bans to be announced through the same notice channel. Do not use third-party tools or exploits — the first ban wave already landed.
 
