@@ -187,3 +187,38 @@
 - 用户登录浏览器打开 Actions → 最新 CI run → 贴出失败 step 的日志尾部(最快)
 - 或等 IP 配额窗口重置后用 API 拉 logs zip
 - 修复时优先检查 repo Settings → Variables → actions 有无 `SITE_URL`
+
+## 12. v1.6:tier-list 新页 + 11-7 补丁 + 评价翻档(2026-11-08)
+
+### 触发条件 ② 命中:评价翻档
+
+- Steam 全语言标签 **mixed → positive**(2026-11-08 11:01 UTC 抓取:英文子集 **71% 好评,1,588 条**;总推荐 4,049)
+- 轨迹:52%(503,11-4)→ 67%(1,015,11-5)→ 68%(1,204,11-6)→ **71%**(1,588,11-8),稳步爬升
+- **首页文案跟进方式**:hero/meta/overview 三处 description 刷新 —— 「verified against official class intros」(已过时)→「verified in-game and dated」,并把 known-issues tracker 写进站点定位。未把评价数字写上首页(会快速腐烂,与 dated 原则冲突)
+
+### tier-list 新页(/guides/tier-list,竞品分析 #2 落地)
+
+- **素材**:AOEAH launch-week tier list(11-4)全 12 武器 PvE/PvP 评分(8 实装 + 4 projected:Gladius/Great Shield/Crossbow/Vitality Staff)+ 5 PvE + 5 PvP 社区 build
+- **红线执行**:页面顶部 warn Callout 明示「community-sourced,not verified in-game by this site」,全表标注来源与日期;projected 行带 * 并注明仅 Gladius 有官方日期(12 月)
+- **结构**:班级评分表 → 武器 12 行表 → 两条结构解读(Longsword 专精化 / Warhammer 垫底但有刚修复的 bug)→ Quick Picks by playstyle(PvE/PvP)→「为什么底部先动」(Warhammer trait 修复 / 战斗手感重做 / **trait 点数 exploit 已关闭并强制重置**)→ 变动预告(12 月 Gladius 落地即重排)
+- 互链:class-guide(正文+What to read next)、troubleshooting、beginner-guide、/tags/builds/;beginner-guide 与 class-guide 已回链
+
+### 11-7 补丁(08:30 UTC)—— 站点状态列更新
+
+- **Cliffs of Madness 断链已修**:Poldat 后可重进区域找入口处 Kevin(排障页状态:Partially fixed (Nov 7),FAQ +1)
+- **聊天隐藏选项已上线**(Options 内开关 mini chat + 频道通知选择)—— 原「计划中」条目改为已交付
+- 重生改进:Revive Nearby (F) / Go Outside (G);仓储 200→1,000
+- **trait exploit 关闭**:Collapsed Southern Ruins 的 Recommended Traits 强制分配点数已重置(写入 tier-list「底部先动」+ class-guide launch-week)
+- 战斗:Warhammer Unstoppable Force II 不再叠层、Reckless Destroyer / Ice Crystal 修复、Bauchu 地形奶酪移除
+- Malchuk:通道进出修复 + 重生改进(**核心「死后不重现」仍未确认修复**,状态维持 Under investigation 并注明部分缓解)
+
+### 数据快照(11-8 19:01 北京)
+
+在线 12,993(11-6 23:15 为 14,135);评价 4,049 条;价格 $29.99 无折扣;11-7 后暂无新公告
+
+### 触发条件(下一轮)
+
+1. ~~评价翻档~~ ✅ 已处理(文案刷新)
+2. Malchuk / 通用 Boss 重置 / 散队修复确认 → 排障页状态列
+3. **12 月更新细节**(female Warrior + Gladius)→ class-guide + tier-list 重排
+4. **AOEAH 等 tier list 更版**(11-4 版已旧)→ tier-list 换源/重日期

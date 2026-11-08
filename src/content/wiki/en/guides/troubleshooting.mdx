@@ -3,7 +3,7 @@ title: 'ArcheAge Chronicles Known Issues — Launch Bugs, Fixes & Patch Status'
 description: 'ArcheAge Chronicles launch bugs with live status: tutorial fix deployed November 4, boss despawn partially fixed, Malchuk still under investigation. Dated.'
 category: 'guides'
 date: 2026-11-04
-lastModified: 2026-11-06
+lastModified: 2026-11-08
 tags: ['troubleshooting', 'bugs', 'launch', 'fixes']
 summary: 'The first fix wave is live: the November 4 maintenance deployed the tutorial-progression fix, a Meliot spawn fix, and quest-abandon changes. The generic boss-despawn fix is not yet confirmed shipped, and the Malchuk and party-disband issues remain under investigation. Full status sheet below, dated November 6, 2026.'
 faq:
@@ -15,6 +15,8 @@ faq:
     answer: 'Leaving a boss area and returning could stop the boss from respawning. A specific case — Meliot not appearing — was fixed in the November 4 maintenance, but the generic leave-and-return despawn fix announced on November 4 is not yet confirmed in the patch notes. Until it is, finish boss encounters in one pull and do not leave the arena mid-fight.'
   - question: 'What was fixed in the November 4 maintenance?'
     answer: 'The tutorial-progression fix, a fix for Meliot not appearing, an Altar of Seals retry fix, a whisper display fix, improved hitbox detection in the Krogal fight, four Diamond Shores quests made abandonable, Hereafter Stone made unsellable, and assorted item/dismantle adjustments. Update via your Steam Library; restart Steam if the update button does not appear.'
+  - question: 'Can I re-enter Cliffs of Madness after killing Poldat in ArcheAge Chronicles?'
+    answer: 'Yes — since the November 7 patch you can leave after defeating Poldat and re-enter the area, where Kevin waits at the entrance to continue the quest. The patch also fixed a list of other named quest blockers, including Sunken Glory and the Diamond Shores Exploration quest.'
   - question: 'ArcheAge Chronicles will not launch or shows a black screen — what do I do?'
     answer: 'A black screen on first launch is usually shader compilation — wait up to 10 minutes without force-restarting. Then work down the list: fully exit Steam (end leftover processes in Task Manager), disable the Steam and third-party overlays, verify game-file integrity, check your antivirus for quarantined XIGNCODE3 files, and update your GPU drivers. Still stuck? Open a ticket via ESC → Customer Support.'
   - question: 'How do I fix a dungeon boss that never spawns in ArcheAge Chronicles?'
@@ -26,7 +28,7 @@ faq:
 import Callout from '~/components/mdx/Callout.astro';
 import Accordion from '~/components/mdx/Accordion.astro';
 
-ArcheAge Chronicles launched on November 3, 2026, and XLGames posted its **[Key Issues on Early Access Launch Day and Our Response Plan](https://steamcommunity.com/app/3218230/allnews/)** on November 4 at 10:57 UTC, then ran a **temporary maintenance the same day** (completed 19:53 UTC) that shipped the first fix wave. This page turns those notices into a fix sheet you can scan in a hurry. **Everything here is official-source material, last verified November 6, 2026** — no community guesswork.
+ArcheAge Chronicles launched on November 3, 2026, and XLGames posted its **[Key Issues on Early Access Launch Day and Our Response Plan](https://steamcommunity.com/app/3218230/allnews/)** on November 4 at 10:57 UTC, then shipped **two client patches** — one on November 4 (19:53 UTC) and a bigger one on November 7 (08:30 UTC). This page turns those notices into a fix sheet you can scan in a hurry. **Everything here is official-source material, last verified November 8, 2026** — no community guesswork.
 
 <Callout type="warn" title="Update your client before retesting anything">
   The November 4 fixes only apply after the client updates. Open your **Steam Library** and let the update run; if no update button appears, **fully close and restart Steam** first. Several "still broken" reports after the maintenance were players on the pre-patch client.
@@ -45,14 +47,26 @@ Completed **November 4, 19:53 UTC** — apply via Steam Library (restart Steam i
 - **Hereafter Stone can no longer be sold** (it can still be discarded), plus dismantle-setting adjustments and a fix for discarding Cheap Moonshine.
 - Mutual attacks disabled at the Pioneers' Assembly Hall in the Conflict Channel.
 
+## What shipped in the November 7 maintenance
+
+Completed **November 7, 08:30 UTC** (started November 6, 23:00 PT) — the bigger of the two patches:
+
+- **Cliffs of Madness un-blocked.** After defeating Poldat, you can now leave and **re-enter the area and speak with Kevin at the entrance** — the launch's most-reported quest dead-end.
+- **Respawn system improved.** **Revive Nearby (F)** revives you at the nearest location regardless of Nui Statue or Nui Flame, and **Go Outside (G)** pulls you out of a Dimension if you died inside one.
+- **Chat settings shipped.** Options now has chat settings: toggle the mini chat window on or off and choose which channels show in notifications — the long-requested "hide chat" option is live.
+- **Storage weight raised from 200 to 1,000.**
+- **Trait exploit closed.** The Recommended Traits exploit in Collapsed Southern Ruins is fixed, and **trait points it forcibly allocated have been reset** — some launch-week builds just lost their free points.
+- **Combat fixes**: Reckless Destroyer effect, Ice Crystal duration, and the **Warhammer's Unstoppable Force II trait no longer stacks**; the Bauchu terrain cheese is gone.
+- **Quest and channel fixes**: Sunken Glory, Diamond Shores Exploration, Weeping Dead's Doll, Gnoll's Doll, Phantoms of the Recalling Grounds, Bloodstained Note, duplicate rewards removed, Diamond Shores achievement counts corrected; Seaglass Tower and Malchuk channel entry/exit issues fixed; portal-shaped objects no longer have collision.
+
 ## Quick fix sheet
 
 | Symptom | Status | What to do |
 |---|---|---|
 | Tutorial quest will not advance | **Fixed — deployed Nov 4** | Update the client; report if it recurs |
 | Boss stopped spawning | **Partially fixed** (Meliot confirmed) | Do not leave a boss arena mid-fight |
-| Malchuk will not reappear / cannot respawn | Under investigation | Report details in the official Discord |
-| Quest dead-ends after talking to an NPC (incl. Cliffs of Madness) | Under investigation | Report the exact NPC and area |
+| Malchuk will not reappear / cannot respawn | Under investigation | Try Revive Nearby (F) / Go Outside (G); report spawn failures |
+| Quest dead-ends after talking to an NPC | **Partially fixed (Nov 7)** | Cliffs of Madness: re-enter and talk to Kevin |
 | Stuck after party leader leaves / party disbands in a dungeon | Under investigation | Stay grouped until you reach the next area |
 | Party member cannot pick up a key | Known, not shared | Each member must loot their own key |
 | Character stuck in terrain | Workaround available | ESC → Escape, then restart if needed |
@@ -81,15 +95,15 @@ Completed **November 4, 19:53 UTC** — apply via Steam Library (restart Steam i
 </Accordion>
 
 <Accordion title="Malchuk encounter — boss will not appear, or you cannot respawn">
-  **Status: under investigation.**
+  **Status: under investigation — partially eased by the November 7 patch.**
 
-  After dying during the Malchuk encounter, the boss may fail to appear again, and players may be unable to respawn. XLGames is still isolating the root cause and trigger conditions. If it happens to you, post the details in the official Discord bug-report channel — reproduction reports are what they are asking for.
+  After dying during the Malchuk encounter, the boss may fail to appear again, and players may be unable to respawn. The November 7 patch fixed the related **Malchuk channel exit bug** and improved respawns globally (**Revive Nearby (F)** / **Go Outside (G)**), but the core spawn-after-death bug is not confirmed fixed. If it happens to you, post the details in the official Discord bug-report channel — reproduction reports are what they are asking for.
 </Accordion>
 
 <Accordion title="Quest progression breaks after an NPC conversation">
-  **Status: under investigation.**
+  **Status: the named case is fixed (November 7).**
 
-  Talking to NPCs in certain areas — the Cliffs of Madness is named explicitly — can leave a quest unable to progress. The cause and conditions are still unknown. Same ask: report the NPC, the area, and the quest name.
+  The most-reported case — **Cliffs of Madness** — now works: after defeating Poldat, leave and re-enter the area, then speak with **Kevin at the entrance**. The patch also fixed NPC interaction failures "under certain circumstances" and a list of named quest blockers (Sunken Glory, Diamond Shores Exploration, Weeping Dead's Doll, Gnoll's Doll, Phantoms of the Recalling Grounds, Bloodstained Note). Hit a dead-end in a different area? Report the NPC, the area, and the quest name.
 </Accordion>
 
 <Accordion title="Dungeon blocks after the party leader leaves or the party disbands">
@@ -158,7 +172,7 @@ Collected from community guides (MetaForge, November 4; LagZapper) and standard 
 ## Settings worth changing now
 
 <Accordion title="Chat is full of languages you do not read">
-  Go to **Settings → Game Options → Chat Language Filter** to hide unwanted languages. XLGames also plans to add an option to hide the chat window entirely.
+  As of the **November 7 patch**, chat settings live in **Options**: toggle the mini chat window on or off and choose which channels appear in notifications. The language filter remains at **Settings → Game Options → Chat Language Filter**.
 </Accordion>
 
 <Accordion title="You cannot find your party in the same channel">
@@ -171,7 +185,7 @@ Collected from community guides (MetaForge, November 4; LagZapper) and standard 
 
 ## Maintenance and platform limits
 
-- **November 4 maintenance: completed** (started 09:00 AM PT / 17:00 UTC, wrapped at 19:53 UTC). Contents listed above. Future maintenance windows get announced through the Steam news hub, and the schedule can shift.
+- **Two client patches are live: November 4** (19:53 UTC) **and November 7** (08:30 UTC). Contents listed above. Future maintenance windows get announced through the Steam news hub, and the schedule can shift.
 - **Linux and Steam Deck are not officially supported.** No timeline for support — and community Proton/file-modification workarounds carry **account risk** under the anti-cheat; XLGames discourages them.
 - **Steam Family Sharing is intentionally unsupported** — one purchase, one library.
 - **Optimization is ongoing.** Stuttering and frame-rate drops are widespread and environment-dependent, so there is no single fix yet.
