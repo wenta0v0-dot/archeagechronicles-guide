@@ -222,3 +222,20 @@
 2. Malchuk / 通用 Boss 重置 / 散队修复确认 → 排障页状态列
 3. **12 月更新细节**(female Warrior + Gladius)→ class-guide + tier-list 重排
 4. **AOEAH 等 tier list 更版**(11-4 版已旧)→ tier-list 换源/重日期
+
+## 13. v1.7:per-class 独立页 ×4(HANDOFF 待办 #4 落地)(2026-11-08)
+
+**新页**:`/guides/warrior| ranger | mage | berserker`(HARDOFF 待办清单第 4 项完成)
+
+- **统一模板**(四页一致,内容差异化):身份/性别锁 → 双武器表(社区评分 + 解读)→ 社区 builds(标注 AOEAH 11-4)→ swap 经济与 trait 点数(标注 community-reported)→ **「Patch notes that touch the X」**(每班只写有据可查的:Warhammer 叠层修复=Berserker、Ice Crystal 时长=Mage 页但注明「补丁只写了技能名没写职业」、Krogal 命中=Berserker 页)→ 职业横向对比(三连互链)→ What to read next(固定回链 tier-list/class-guide/troubleshooting + 本职业标签页)
+- **技能名单红线处理**:Berserker 页列出的 9 个技能名全部标注「Community class guides (reporting the official skill reveals) — verify in-game」;Warrior/Ranger/Mage 无可靠技能名单,不编造
+- **预测武器处理**:Crossbow(Ranger)/Vitality Staff(Mage)/Great Shield(Berserker)各页 FAQ 注明「community projections, XLGames 未确认」;Gladius 为唯一官方日期武器
+- **互链密度**(借 Wikily 思路):class-guide 挂 4 职业页(hub);tier-list 表下挂 4 职业页;4 职业页两两互链(每页「How the X compares」小节)+ 回链三大页;共新增内部链接 24+
+- **URL**:短 slug(warrior/ranger/mage/berserker),新标签页 ×4
+
+**内容策略**:「How the X compares」小节是刻意设计的站内环路 —— 从任一职业页三步内可达其余全部页面;三个入口(class-guide/tier-list/标签页)都能落到职业页
+
+**下一轮**:
+1. 12 月更新落地 → 4 职业页各自补 Gladius/female Warrior 实测段
+2. AOEAH tier list 更版 → 4 页武器评分同步重日期
+3. 实机核验技能名与 trait 数值 → 去掉 community-reported 标签
