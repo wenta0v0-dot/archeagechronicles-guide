@@ -239,3 +239,31 @@
 1. 12 月更新落地 → 4 职业页各自补 Gladius/female Warrior 实测段
 2. AOEAH tier list 更版 → 4 页武器评分同步重日期
 3. 实机核验技能名与 trait 数值 → 去掉 community-reported 标签
+
+## 14. v1.8:11-17 平衡补丁预告 + temper 道歉信 + 11-12 补丁(2026-11-14)
+
+### 本周大事(按时间)
+
+- **11-9 公告**:Temper 数据错链(某些装备强化后属性异常偏高/偏低)
+- **11-10 封禁**:Boss 奖励重复领取漏洞制裁(第二波)
+- **11-11 道歉信**(设计组长 Jay Lee):不直接回滚(会砍 30% ATK),改为**抬高基础属性 + 新增加成词条**补偿
+- **11-12 维护**(09:01 UTC):temper 修复部署;**Malchuk 击败后进度修复**;Cliffs 组队 + Kevin「Talk to Edward」修复;内存优化(针对崩溃);物品重量大改(大量归零);Boss 掉落唯一武器限一次/角色 + 装备等级门槛 + 市场上架价上调;Wavesword Swift Slash 命中修复;Celtak 无伤 exploit 封闭;**Raid Boss 元素抗性大增**(Celtak:Shock / Vanguard:Poison)
+- **11-13 Jay's Notes**:**11-17(周二)更新预告** —— Elemental Staff 削弱(Wall of Fire / Flamethrower,Shooting Star 增强)、**Longbow 大幅增强**(全 Longbow 武器 ATK↑,Focus Fire / Fire Arrow / Scarlet Arrow 大增,Maneuver 系大增)、Elemental DEF 开始对状态异常生效(有下限)、加工材料配方简化(怪物掉落 + Sweetgrass Powder 移除);**Warrior Greatsword / Berserker Axe 审阅后推迟**
+- **在线**:7,293(11-14 03:17 UTC)—— 11-8 的 12,993 → **-44%**;评价 5,377 条,英文子集 71% of 2,077,positive 档位稳住
+
+### 站点更新(v1.8)
+
+- **tier-list**:新增「November 17 balance patch announced」小节(五条变更 + 怎么应对:staff 上限降/longbow 投入开始回报)+「temper 数据错链」caveat(**首周社区评分部分建立在错链强化装备上** + Raid Boss 抗性大增 = 「Boss 秒杀时代结束」);warn Callout 更新「five client patches」;变动预告改为 11-17 先行
+- **mage**:补丁小节重写(11-17 削弱预告 / 11-12 Swift Slash 修复 / 11-7 Ice Crystal)
+- **ranger**:补丁小节重写(11-17 大 buff 预告 —— 页面 8/7.5 评分正是该补丁针对的缺口)
+- **berserker**:11-17 Axe 推迟、11-12 Pulverize 视觉 + Raid Boss 抗性(坦克相关性↑)
+- **warrior**:11-17 Greatsword 推迟(等待分步武器平衡轮)
+- **troubleshooting**:新增「What shipped in the November 12 maintenance」完整小节;状态列 Malchuk → **Mostly fixed**、Cliffs → Fixed(Nov 7+12)、temper 行新增(**Fixed — deployed Nov 12**);崩溃条目改为「improving — memory optimizations shipped」;FAQ +1(强化属性变化);封禁信息保持 HANDOFF 记录不进页面
+
+### 触发条件(下一轮)
+
+1. **11-17 平衡补丁落地** → tier-list 重排 mage/ranger 行 + 4 职业页补丁小节重日期(最重要的下一轮)
+2. 12 月更新(female Warrior + Gladius)→ class-guide + tier-list projected 行
+3. AOEAH tier list 更版 → 换源重日期
+4. 散队卡副本 / 通用 Boss 重置确认 → 状态列最后两项
+5. CI 红灯(11-2 起历史遗留)—— 等日志或限流重置
