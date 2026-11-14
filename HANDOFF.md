@@ -267,3 +267,32 @@
 3. AOEAH tier list 更版 → 换源重日期
 4. 散队卡副本 / 通用 Boss 重置确认 → 状态列最后两项
 5. CI 红灯(11-2 起历史遗留)—— 等日志或限流重置
+
+## 15. v1.9:YouTube 视频素材接入(2026-11-15)
+
+**基建落地**:HANDOFF §5 遗留的「拿到官方预告 videoId 后替换 LazyYouTube」待办完成。
+
+### 素材清单(全部经 oEmbed 验证标题+频道)
+
+**官方频道(@ArcheAgeChronicles)9 支,接入 4 支:**
+- `U4U8fbXe_mY` Official Early Access Launch Trailer → **首页 hero.videoId**(VideoSection 空值占位终于有了真身)
+- `H3Mi_U__dbo` You Asked. We're Fixing It(EP Ham 修复讲解,11-6)→ troubleshooting
+- `Ed13FfkyYPo` Don't Pick the WRONG WEAPON! Tier List(官方出品的 tier 内容!)→ tier-list
+- `-Gtxd5wxE8M` First Major Update Preview | December 2026(11-12)→ class-guide
+
+**社区(Kybuza 系列「How to Build the PERFECT X」四连)→ 四职业页:**
+- Warrior `ANVdaofuOhU` / Ranger `ITROYyLNN3k` / Mage `35ewoJDz7xY` / Berserker `kuEcin-w3fQ`
+- 其余:tier-list 加 `HMc8lxXbiUg`(Fireplay「Which Class Should You Play」);beginner-guide 加 `uWwjqAXjtKk`(Ulfhednar 15+ tips);class-guide 加 `Bazf1XFIMGg`(TrickTrick 全职业武器讲解)
+- 未接入备选:官方 Release Date Trailer `iWQr1bZHqd8`、EA Pricing `X8cZmAdn4kU`、Demo Trailer `7kL9gPCk84k`、Developer Diary `2KLtjnEOx3E`、Unfiltered Talk `ET-VeN35ypY`、Direction devs taking `78ZGLdQMPGU`
+
+### 视频简介挖出的新事实
+
+- **🆕 December 更新含「New Raid: Azhra」**(官方预览视频章节:01:43 New Raid Azhra / 02:58 Female Warrior & Gladius / Customization Tickets / Profile Customization / Hard Mode: Celtak & Crimson?)—— Azhra 为文本公告未载的新事实,已写入 class-guide 12 月小节 + tier-list「When this list changes」
+- 官方视频把 11-17 平衡信复述为「**Falling Star** buffed」,文本信写「**Shooting Star**」—— 同一技能两种译名,**以 Steam 文本公告为准**(已记录,不写进页面避免混乱)
+- EP Ham 视频(11-6)确认 11-7 补丁是「weekend patch」承诺的兑现;官方视频节奏 = 每次维护配套一支讲解
+
+### 流程备忘
+
+- YouTube 搜索/频道页抓取:新 UI 用 lockupViewModel,videoRenderer 正则失败;**oEmbed 逐 ID 验证**是最稳路径(返回 title+author,顺带确认视频存在且未删)
+- watch 页 `uploadDate` / `shortDescription` 可直接正则提取,简介含章节时间戳 = 事实金矿(本次 Azhra 即来自章节标题)
+- MDX `videos` 字段 schema 校验 11 位 ID;ArticlePage 文末懒加载,首页 VideoSection 由 `home.hero.videoId` 空值开关
