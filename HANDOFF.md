@@ -296,3 +296,38 @@
 - YouTube 搜索/频道页抓取:新 UI 用 lockupViewModel,videoRenderer 正则失败;**oEmbed 逐 ID 验证**是最稳路径(返回 title+author,顺带确认视频存在且未删)
 - watch 页 `uploadDate` / `shortDescription` 可直接正则提取,简介含章节时间戳 = 事实金矿(本次 Azhra 即来自章节标题)
 - MDX `videos` 字段 schema 校验 11 位 ID;ArticlePage 文末懒加载,首页 VideoSection 由 `home.hero.videoId` 空值开关
+
+## 16. v2.0:第一性原则视频转录挖矿(2026-11-15)
+
+**方法论升级**:v1.9 只嵌入视频;本轮把视频当**一手信源**,提取字幕转录稿挖事实。管线:`yt-dlp.exe`(独立 exe,因本机 Python 3.8 无法升级 pip 版)→ `--write-subs --sub-langs en` → vtt2txt.py 去重合并 → 通读。**限制**:timedtext 端点 429 是 IP 级限流,批量提取需 ≥15s 间隔 + 长冷却;官方三支(人工字幕)全拿到,社区五支(429)待冷却重试。
+
+### 官方三支转录已提取(视频 ID)
+
+1. **-Gtxd5wxE8M** First Major Update Preview(Jay Lee,11-12)— 4,999 字符
+2. **X8cZmAdn4kU** EA Content, Future Plans & Pricing(EP Ham,发布前)— 4,557 字符
+3. **H3Mi_U__dbo** You Asked. We're Fixing It(EP Ham,11-6)— 6,737 字符
+
+### 挖出的新事实(文本公告没有的)
+
+**Azhra raid 细节**(12月预览):Gylden Ruins 隐藏区 → 巨型空艇 → Azhra 巢穴;全名更新日公布;掉落 **Legendary 武器+轻甲**制造材料;刻意调难(「Celtak 被清得比预期容易太多」)。
+**🆕 Customization Ticket 关键细节**:获性别选项的职业**免费**发券,**现有角色直接换性别无需重建**(Jay Lee 原话)—— 关闭了此前「是否需重建角色」的未确认问题。
+**Profile 自定义**:游戏内自拍编辑成头像 + 状态消息;**World Events** 开发中(未确认)。
+**硬模式**:Celtak + Crimson Rift(11-17 周),Boss 大幅强化 + 复活延迟,奖励 **Epic Lunastones**;考虑扩展到其他 POI/副本/Hereafter。
+**人力背景**:制作人 Ham 病重住院,路线图视频延期至其回归(解释了 11-14 前后官方公告节奏放缓)。
+**区域官方定名**(定价视频):**Diamond Shores / Gylden Ruins / Astron Plains**,每区域主线 10+ 小时(合计 30+);$29.99 / ₩36,000;EA 后三支柱(性别解锁→第三武器→平衡/QoL)。
+**开发中清单**(Ham 修复视频):账户共享仓库 + 仓库家具(1000 磅是权宜)、**玩家屏蔽功能**、好友/公会频道直加、**组队匹配**、手动公会审批、地契合约解除。
+**补丁工艺**:11-7 补丁是「打包修复」策略(不再无限热修);频道目标完成后**队长离开前不关闭**是有意设计;F 键 NPC 对话后失灵 / 重登后教程卡死为 11-7 波修复项。
+
+### 落页
+
+- **class-guide**:12 月小节全面升级(Azhra 入场路径/传奇材料/刻意调难、换性别券原话引用、profile 自定义、World Events);FAQ(Warrior 性别)更新为「可换无需重建」
+- **warrior**:12 月小节 + Azhra 传奇武器 + 换性别券;FAQ 同步
+- **tier-list**:路线图加硬模式(Epic Lunastones)+ Azhra 传奇装备细节
+- **beginner-guide**:Hour 0 加三区域官方定名 + 每区 10+ 小时
+- **troubleshooting**:新增「Officially in development」小节(账户共享仓库/玩家屏蔽/组队匹配/手动公会审批/硬模式扩展/Ham 病情与路线图);11-7 小节补 F 键/重登教程/频道设计意图
+
+### 未完成与备选
+
+- 社区五支转录(Kybuza×4 / Ulfhednar)被 429 挡,冷却后重跑可补**三职业技能名单**(当前仅 Berserker 有具名技能)与 trait 点数验证 —— 下一轮优先
+- 官方备选库未转录:Release Date Trailer、Demo Trailer、Developer Diary、Unfiltered Talk、Direction devs taking
+- ojWvKSYR8b4(MAGE NERF recap)确认官方频道在发社区风格解说视频;其文字与 11-13 信一致,另证实 Falling Star/Shooting Star 双译名并存(以 Steam 文本信为准)
