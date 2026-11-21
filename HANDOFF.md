@@ -374,3 +374,18 @@
 2. **12 月更新**(Azhra / female Warrior / Gladius)→ class-guide + tier-list projected 行 + warrior 页
 3. 社区五支视频转录(429)→ 三职业技能名单
 4. shop-economy 后续(金币产出渠道拓宽方案)→ beginner-guide 经济段
+
+## 18. v2.2:社区构建原型落页(429 降级方案)(2026-11-21)
+
+**社区视频转录重试仍 429**(timedtext IP 级封锁,换 player_client 无效;第三方转录站 403)。降级方案生效:**watch 页 shortDescription 无 429**,四支 Kybuza 简介全提到,含时间戳与构建原型描述。
+
+**挖到并落页**(全部标 creator-reported + 日期,注明 verify in-game):
+- **Warrior**(10-31):Longsword 双特质树(parry-and-counter 树 / health-sacrifice-and-recovery 进攻树);Greatsword 进攻树具名 **Armor Break、Sweeping Slash**(全站首批 Warrior 技能名)
+- **Ranger**(11-01):Longbow = **Burn / Critical** 两系;Hatchet = **Thunder / Bleed** 两系(四原型)
+- **Mage**(11-03):Staff = **Burn / Thunder**;Wavesword = **Freeze 机制 + Lunar Eclipse**(居合核心);注明简介早于 11-17 削弱
+- **Berserker**(11-02):四方向(solo bruiser / 组队前排 / boss 输出 / 清屏)
+- 描述确认 trait 系统:各武器独立 trait 树、Offensive/Defensive 双路径、~95 点 / 单武器 50-60 上限口径一致
+
+**转录管线备忘**:timedtext 429 无解时,watch 页 description(含章节+ WHAT YOU'LL LEARN 段)是可靠降级源;ytdlp 新版警告缺 JS runtime(deno)不影响字幕枚举。
+
+**下一轮**:① 12 月更新落地(Azhra/female Warrior/Gladius 实装)→ 全站大轮;② AOEAH 等 tier 重评 → tier-list 重排;③ timedtext 冷却后再试完整转录(技能名补全);④ shop-economy 后续方案。
