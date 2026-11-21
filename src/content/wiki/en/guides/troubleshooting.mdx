@@ -3,7 +3,7 @@ title: 'ArcheAge Chronicles Known Issues — Launch Bugs, Fixes & Patch Status'
 description: 'ArcheAge Chronicles launch bugs with live status: tutorial fix deployed November 4, boss despawn partially fixed, Malchuk still under investigation. Dated.'
 category: 'guides'
 date: 2026-11-04
-lastModified: 2026-11-14
+lastModified: 2026-11-21
 tags: ['troubleshooting', 'bugs', 'launch', 'fixes']
 summary: 'The first fix wave is live: the November 4 maintenance deployed the tutorial-progression fix, a Meliot spawn fix, and quest-abandon changes. The generic boss-despawn fix is not yet confirmed shipped, and the Malchuk and party-disband issues remain under investigation. Full status sheet below, dated November 6, 2026.'
 videos:
@@ -76,6 +76,27 @@ Completed **November 12, 09:01 UTC** — the weight-and-economy patch, plus the 
 - **Boss-loot economy tightened**: unique boss-loot weapons are **once per character**, tradable loot weapons gained **equip level requirements**, Marketplace minimum listing prices rose, and 12 Rare Hereafter Accessories became untradable.
 - **Other fixes**: Wavesword's Swift Slash no longer misses; stat-point refunds on reset now complete (previously unrefunded points restored automatically); Celtak's no-damage terrain exploit closed; Collapsed Southern Ruins re-entry fixed after a Meliot kill without the reward; Monstrous Tristan Adventure Log now updates (retroactively for affected characters); raid bosses gained significant elemental resistance (Celtak: Shock, Vanguard of Destruction: Poison).
 
+## What shipped in the November 17 maintenance
+
+The balance patch — class numbers live on the [tier list](/guides/tier-list/). Troubleshooting-relevant items:
+
+- **Party behavior fixed**: parties no longer disband when the leader leaves a channel; auto-move to the leader's channel on join; Move Channel button always visible with failure reasons; no Peace↔Conflict switch during Trade.
+- **Cliffs of Madness, round three**: quests now progress even when **joining late** (prison-door step retroactively creditable), cannons work regardless of quest state, and **Kevin is always visible on the exit ship** — anyone can talk to him to return to the entrance.
+- **Lunastone dismantling added** (Mysterious Lunar Dust + Fragments; translations missing until the next maintenance) — the fix for bags piling up with Lunastones. Crafting from the dust followed on November 20.
+- **Economy-wide shop sell prices dropped.** The rationale came in Jay Lee's November 20 letter: gold production outgrew expectations, shop-selling had become too efficient (and was the vehicle for banned bot accounts), so gold now flows from deeper play stages instead — with combat upkeep (repairs) relieved by the November 20 durability fix.
+- **Crafting**: processed materials no longer need Common/Uncommon loot; Uncommon armor / Rare weapons need more loot; expert gathering tools got more durability; Bone Chips increased from Alligator Turtles and Crocodiles.
+- A client hotfix followed on **November 18** for repeated login crashes with certain characters.
+
+## What shipped in the November 20 maintenance
+
+- **Hard Mode is live** for **Crimson Rift and Brutal Nightmare**: same dialogue-entry, but death now costs a **revive wait — 10 seconds, +10 per death, capped at 90** — resetting on re-entry. Raid schedules: Crimson Rift 03:00/11:00/19:00 UTC, Brutal Nightmare 04:00/12:00/20:00 UTC, 30 minutes each.
+- **Boss Bounty Boards** at each regional town entrance: missions against regional bosses paying EXP, Gold, Bonecraft, and Lunastone materials.
+- **Moonshadow Weapon/Armor Lunastones** craftable at the Alchemy Workbench from Mysterious Lunar Dust/Fragments — the crafting half of the dismantling loop. A **Hereafter Stone crafting recipe** also landed (Dust + Archeum).
+- **Durability fix**: the damage threshold for weapon durability loss was raised, so gear consumes less — the "lower combat upkeep" promise from the economy letter, delivered.
+- Raid bosses got **Stagger/Exhaust resistance** — in 12-player raids they were being interrupted out of attacking entirely. (Also our first official confirmation of the **12-player raid size**.)
+- Compensation from the temper incident: the **Apple Hat Box** cosmetic went to all accounts' mailboxes.
+- UI: equipment slots show slot numbers and the currently held weapon; bag equipping pops a slot chooser.
+
 ## Quick fix sheet
 
 | Symptom | Status | What to do |
@@ -84,7 +105,7 @@ Completed **November 12, 09:01 UTC** — the weight-and-economy patch, plus the 
 | Boss stopped spawning | **Partially fixed** (Meliot confirmed) | Do not leave a boss arena mid-fight |
 | Malchuk will not reappear / cannot respawn | **Mostly fixed** (Nov 12) | Post-defeat progression fixed; report spawn failures |
 | Quest dead-ends after talking to an NPC | **Fixed (Nov 7 + Nov 12)** | Cliffs of Madness: re-enter and talk to Kevin |
-| Stuck after party leader leaves / party disbands in a dungeon | Under investigation | Stay grouped until you reach the next area |
+| Stuck after party leader leaves / party disbands in a dungeon | **Mostly fixed (Nov 17)** | Party survives leader leaving a channel; dungeon rule still applies |
 | Party member cannot pick up a key | Known, not shared | Each member must loot their own key |
 | Character stuck in terrain | Workaround available | ESC → Escape, then restart if needed |
 | Game will not launch / long black screen | Workaround available | Wait out shader compile, then verify files & overlays |
@@ -125,9 +146,9 @@ Completed **November 12, 09:01 UTC** — the weight-and-economy patch, plus the 
 </Accordion>
 
 <Accordion title="Dungeon blocks after the party leader leaves or the party disbands">
-  **Status: under investigation — a fix may take time.**
+  **Status: mostly fixed (November 17).**
 
-  XLGames calls this structural, which means it is not a quick patch. **The rule until then: do not disband and do not let the leader leave until every member has moved on to the next area after clearing the dungeon.**
+  The November 17 patch changed the underlying behavior: **the party no longer disbands when its leader leaves a channel** (re-entering restarts the content), joining a party in the same zone **moves you to the leader's channel automatically**, and the **Move Channel button is always visible** — showing the reason when a move is not possible. The original dungeon-specific lock (leader leaving mid-dungeon blocking progression) is not explicitly named as fixed in the notes, so the old rule still pays off: **stay grouped until every member has moved on to the next area after clearing the dungeon.**
 </Accordion>
 
 <Accordion title="Dungeon boss missing with a party — the leader-swap trick (unofficial)">
@@ -203,7 +224,7 @@ Collected from community guides (MetaForge, November 4; LagZapper) and standard 
 
 ## Maintenance and platform limits
 
-- **Three client patches are live: November 4, 7, and 12.** Contents listed above. A balance-focused update is announced for **Tuesday, November 17** (class balance + crafting recipes). Future maintenance windows get announced through the Steam news hub, and the schedule can shift.
+- **Five client patches are live: November 4, 7, 12, 17, and 20** (plus a November 18 login-crash hotfix). Contents listed above; the November 17 patch also carried the class-balance changes documented on the [tier list](/guides/tier-list/). Future maintenance windows get announced through the Steam news hub, and the schedule can shift.
 - **Linux and Steam Deck are not officially supported.** No timeline for support — and community Proton/file-modification workarounds carry **account risk** under the anti-cheat; XLGames discourages them.
 - **Steam Family Sharing is intentionally unsupported** — one purchase, one library.
 - **Optimization is ongoing.** Stuttering and frame-rate drops are widespread and environment-dependent, so there is no single fix yet.
@@ -225,7 +246,7 @@ From producer Yongjin Ham's video updates (November 6 and earlier) — fixes and
 
 ## What this page will become
 
-Every entry gets re-dated as patches deploy. The tutorial fix moved out of "waiting" on November 4; Malchuk moved to mostly-fixed on November 12; the party-disband and generic boss-despawn entries stay until their fixes are confirmed in patch notes. If you hit something that is not on this list, it is either unreported or new since November 12 — this page only carries what XLGames has confirmed.
+Every entry gets re-dated as patches deploy. The tutorial fix moved out of "waiting" on November 4; Malchuk moved to mostly-fixed on November 12; the party-disband behavior was reworked on November 17; the generic boss-despawn entry remains the last unconfirmed item. If you hit something that is not on this list, it is either unreported or new since November 20 — this page only carries what XLGames has confirmed.
 
 ## What to read next
 

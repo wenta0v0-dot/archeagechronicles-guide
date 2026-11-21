@@ -331,3 +331,46 @@
 - 社区五支转录(Kybuza×4 / Ulfhednar)被 429 挡,冷却后重跑可补**三职业技能名单**(当前仅 Berserker 有具名技能)与 trait 点数验证 —— 下一轮优先
 - 官方备选库未转录:Release Date Trailer、Demo Trailer、Developer Diary、Unfiltered Talk、Direction devs taking
 - ojWvKSYR8b4(MAGE NERF recap)确认官方频道在发社区风格解说视频;其文字与 11-13 信一致,另证实 Falling Star/Shooting Star 双译名并存(以 Steam 文本信为准)
+
+## 17. v2.1:11-17 平衡补丁落地(精确数值)+ 11-20 硬模式 + 经济信(2026-11-21)
+
+**触发条件 ①(11-17 平衡补丁)命中** —— 本轮最大更新。
+
+### 11-17 平衡补丁(08:20 UTC,精确数值)
+
+- **Elemental Staff**:Wall of Fire 激活+DoT **-30%**(时长 8→6s)、Flamethower **-15%**、Hellfire 追加 **-60%**;补偿 **Shooting Star +100%**(SP 530→470)
+- **Longbow**:武器 ATK **+7.7%**;Focus Fire / Fire Arrow / Scarlet Arrow **+60%**(含武器 +72%);机动系(Abdominal Kick / Flip Kick / Arrow Stab / Counterattack Maneuver / Crescent Kick)**+40%**(含武器 +51%)
+- **系统**:Attribute DEF 生效于状态异常(累计+触发伤害)
+- **Warrior**:Longsword Triple Slash 末段 hitstop 移除;Greatsword 维持推迟
+- **队伍行为重构**:队长离开频道不再解散队伍;同区进队自动跳队长频道;Move Channel 按钮常显+失败原因;贸易中禁跨和平/冲突
+- **Cliffs 第三轮**:晚加入可推进(狱门步骤可补)、火炮无视任务、出口船 Kevin 常驻
+- **经济**:商店售价全面下调(11-20 信解释:金产出过速 + **工作室靠卖店刷金被清洗**);加工材料去 Common/Uncommon 掉落需求;Lunastone 分解上线(Mysterious Lunar Dust/Fragments)
+- **11-18 客户端热修**:特定角色反复崩溃登录
+
+### 11-20 维护(08:40 UTC)
+
+- **硬模式上线**:Crimson Rift + Brutal Nightmare;死亡复活等待 10s 起、每死 +10s、上限 90s、进场重置;**Crimson Rift 03/11/19 点 UTC、Brutal Nightmare 04/12/20 点 UTC,各 30 分钟**
+- **Boss Bounty Board**(区域城镇入口):区域 boss 任务 → EXP/金/Bonecraft/Lunastone 材料
+- **Moonshadow 武器/护甲 Lunastone**(炼金台,Dust+Fragments 闭环)+ **Hereafter Stone 配方**(Dust+Archeum)
+- **耐久修复**:武器耐久扣减伤害阈值上调(= 经济信承诺的「战斗维持成本下降」)
+- **Raid Boss Stagger/Exhaust RES 上调**(12 人团 Boss 被打断无法攻击)—— **首次官方确认 raid 规模 12 人**
+- temper 补偿 **Apple Hat Box** 已发邮箱;装备槽 UI(槽位号+当前持武器指示)
+
+### 数据快照(11-21 09:46 UTC)
+
+在线 **5,413**(11-14 为 7,051,-23%;较上线日 -73%);评价 6,141 条;英文子集 **70% of 2,349**(positive 边界线上);价格 $29.99 无折扣(NT$690 为地区显示)
+
+### 落页
+
+- **tier-list**:「announced」小节重写为「LIVE, with exact numbers」(全部数值);评分表正式标注 pre-patch 数据;行动指引更新(硬模式+Azhra 为真实检验场)
+- **mage / ranger**:补丁小节改为 LIVE + 精确数值
+- **warrior**:Longsword hitstop + 队伍改动(Greatsword 维持推迟)
+- **class-guide**:launch-week 小节加 11-17 大改一行
+- **troubleshooting**:散队条目 → **Mostly fixed (Nov 17)**;新增 11-17 / 11-20 两节;五补丁清单;收尾段更新
+
+### 触发条件(下一轮)
+
+1. **社区对 11-17 的重评成型**(AOEAH 等更新 tier list)→ tier-list 换源重排(最高优先,11-17 数据已实装)
+2. **12 月更新**(Azhra / female Warrior / Gladius)→ class-guide + tier-list projected 行 + warrior 页
+3. 社区五支视频转录(429)→ 三职业技能名单
+4. shop-economy 后续(金币产出渠道拓宽方案)→ beginner-guide 经济段
